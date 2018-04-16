@@ -1,8 +1,6 @@
 const uuid = require('uuid/v4')
 const snacks = []
 
-// console.log('I am the ./model/snack.js file')
-
 function getAll (limit) {
   return limit ? snacks.slice(0, limit) : snacks
 }

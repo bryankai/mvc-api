@@ -14,7 +14,7 @@ function getOne (req, res, next) {
 
 function create (req, res, next) {
   const name = req.body.name
-  const data = model.create(name) //Error: model.create is not a function...
+  const data = model.create(name)
 
   if(data.errors) {
     return next({ status: 400, message: `Could not create new snack`, errors: data.errors })
